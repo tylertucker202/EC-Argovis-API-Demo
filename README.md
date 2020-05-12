@@ -18,7 +18,7 @@ Run the image with this code if linux
 
 `docker run --net=host -v ${PWD}:/usr/src/av_py_env argovis_python_api_demo:1.0`
 
-and this if Windows
+and this if Windows (unverified)
 
 `docker run --net=host -v %cd%:/usr/src/av_py_env argovis_python_api_demo:1.0`
 

@@ -19,6 +19,7 @@ RUN conda install -y pandas
 RUN pip install cmocean
 RUN pip install seaborn
 RUN pip install tqdm
+RUN pip install ipywidgets
 
 # install so that env will show up on jupyter notebook
 RUN conda install -y -c anaconda ipykernel
