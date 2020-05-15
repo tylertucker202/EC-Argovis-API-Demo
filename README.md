@@ -16,12 +16,8 @@ Then build the image with the following command
 
 `docker build --no-cache -t argovis_python_api_demo:1.0 .`
 
-Run the image with this code if linux
+Run the image with this code in terminal or windows powershell
 
-`docker run --net=host -v ${PWD}:/usr/src/av_py_env argovis_python_api_demo:1.0`
-
-and this if Windows (unverified)
-
-`docker run --net=host -v %cd%:/usr/src/av_py_env argovis_python_api_demo:1.0`
+`docker run  -v ${PWD}:/usr/src/av_py_env argovis_python_api_demo:1.0`
 
 Lastly follow the provided link in the terminal. You may be promted to set the kernal on a notebook. Just set the kernal to av_py_env. Good luck!

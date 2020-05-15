@@ -16,6 +16,7 @@ RUN conda activate av_py_env
 # Install libraries needed for API and plotting
 RUN conda install -y -c conda-forge cartopy
 RUN conda install -y pandas
+RUN pip install jupyterlab
 RUN pip install cmocean
 RUN pip install seaborn
 RUN pip install tqdm
@@ -24,4 +25,5 @@ RUN pip install ipywidgets
 # install so that env will show up on jupyter notebook
 RUN conda install -y -c anaconda ipykernel
 RUN python -m ipykernel install --user --name=av_py_env
-CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+RUN jupyter nbextension enable --py widgetsnbextension
+CMD ["jupyter", "lab", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
