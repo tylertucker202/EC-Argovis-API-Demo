@@ -20,6 +20,10 @@ RUN pip install jupyterlab
 RUN pip install cmocean
 RUN pip install seaborn
 
+# install humor sans font clear cache
+RUN apt install fonts-humor-sans
+
+
 # install so that env will show up on jupyter notebook
 RUN conda install -y -c anaconda ipykernel
 RUN python -m ipykernel install --user --name=av_py_env
