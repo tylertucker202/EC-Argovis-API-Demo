@@ -20,7 +20,7 @@ RUN pip install jupyterlab
 RUN pip install cmocean
 RUN pip install seaborn
 
-# install humor sans font clear cache
+# install humor sans font
 RUN apt install fonts-humor-sans
 
 
