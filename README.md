@@ -1,5 +1,5 @@
 # EC-Argovis-API-Demo
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tylertucker202/EC-Argovis-API-Demo/master?urlpath=https%3A%2F%2Fgithub.com%2Ftylertucker202%2FEC-Argovis-API-Demo%2Fblob%2Fmaster%2FEC2020_argovis_python_api.ipynb)
 ## Demonstration of Argovis Python API - For Earthcube 2020 meeting
 
 You can run these notebooks using your own Jupyter kernel. 
